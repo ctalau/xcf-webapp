@@ -1,0 +1,70 @@
+{
+  "report": [{
+      "uuid": "6c79bbaa-39ea-442f-b274-be2db6bf6190",
+      "errorCategory": {
+        "constraintID": "c1",
+        "title": "Cabin Bag Max. Weight 8kg",
+        "shortUserDesc": "Cabin bag should not have more than 8kg weight.",
+        "longUserDesc": "",
+        "specs": [{
+          "name": "Conditons Aeto, Version 1.0",
+          "nameAcronym": "C-Aeto",
+          "errorLevel": "ERROR"
+        }],
+        "tags": [{
+          "shortDesc": "Weight",
+          "longDesc": "Weight related",
+          "descText": "Everything related to luggage weight.",
+          "type": "Error type"
+        }],
+        "errors": [{
+          "messages": {
+            "messageMain": "\n            Assertion: The weight of cabin luggage is 8kg or less.\n                Error Information: The cabin luggage of Jane Grant exceeds the maximum weight allowance by 2kg. Pack lighter!",
+            "messageAssertion": "The weight of cabin luggage is 8kg or less.",
+            "messageDiagnosticsAll": "The cabin luggage of Jane Grant exceeds the maximum weight allowance by 2kg. Pack lighter!"
+          },
+          "locations": {
+            "resolvableXPATH": "\/passenger[1]\/cabin-bag[1]\/weight[1]",
+            "humanXPATH": "\/passenger\/cabin-bag\/weight",
+            "preview": "<weight>10<\/weight>"
+          }
+        }]
+      }
+    },
+    {
+      "uuid": "d93c3563-d427-4cbc-ae78-d4e26a2e06de",
+      "errorCategory": {
+        "constraintID": "c6",
+        "title": "Cabin Bag Max. Depth 24cm",
+        "shortUserDesc": "Depth of cabin bag should not exceed 24cm.",
+        "longUserDesc": "",
+        "specs": [{
+          "name": "Conditions Örn, Version 1.0",
+          "nameAcronym": "C-Örn",
+          "errorLevel": "ERROR"
+        }],
+        "tags": [{
+          "shortDesc": "Dimension",
+          "longDesc": "Dimension related",
+          "descText": "Everything related to the luggage dimensions.",
+          "type": "Error type"
+        }],
+        "errors": [{
+          "messages": {
+            "messageMain": "\n            Assertion: The depth of cabin luggage is 24cm or less.\n                Error Information: The cabin luggage of Jane Grant exceeds the maximum depth allowance by 1cm. Get something with less depth!",
+            "messageAssertion": "The depth of cabin luggage is 24cm or less.",
+            "messageDiagnosticsAll": "The cabin luggage of Jane Grant exceeds the maximum depth allowance by 1cm. Get something with less depth!"
+          },
+          "locations": {
+            "resolvableXPATH": "\/passenger[1]\/cabin-bag[1]\/depth[1]",
+            "humanXPATH": "\/passenger\/cabin-bag\/depth",
+            "preview": "<depth>25<\/depth>"
+          }
+        }]
+      }
+    }
+  ],
+  "filename": "instance.xml",
+  "totalWords": "0",
+  "filesize": "232 Bytes"
+}

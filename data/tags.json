@@ -1,0 +1,158 @@
+{
+					"Data":{
+						"Tags":[
+							{
+								"TagGroup":{
+									"TagList":[
+										{
+											"Long":"TTML2 (Beta)",
+											"Short":"TTML2 (Beta)",
+											"ID":"TTML2 (Beta)",
+											"selectFilterInitial":false
+										},
+										{
+											"Long":"IMSC1 Common",
+											"Short":"IMSC1 Common",
+											"ID":"IMSC1 Common",
+											"selectFilterInitial":true
+										},
+										{
+											"Long":"IMSC1-Text",
+											"Short":"IMSC1-Text",
+											"ID":"IMSC1-Text",
+											"selectFilterInitial":true
+										},
+										{
+											"Long":"IMSC1.0.1 Common",
+											"Short":"IMSC1.0.1 Common",
+											"ID":"IMSC1.0.1 Common",
+											"selectFilterInitial":true
+										},
+										{
+											"Long":"IMSC1.0.1-Text",
+											"Short":"IMSC1.0.1-Text",
+											"ID":"IMSC1.0.1-Text",
+											"selectFilterInitial":true
+										},
+										{
+											"Long":"IMSC1.1 Common (Beta)",
+											"Short":"IMSC1.1 Common (Beta)",
+											"ID":"IMSC1.1 Common (Beta)",
+											"selectFilterInitial":false
+										},
+										{
+											"Long":"IMSC1.1-Text (Beta)",
+											"Short":"IMSC1.1-Text (Beta)",
+											"ID":"IMSC1.1-Text (Beta)",
+											"selectFilterInitial":false
+										},
+										{
+											"Long":"Netflix-General",
+											"Short":"Netflix-General",
+											"ID":"Netflix-General",
+											"selectFilterInitial":false
+										}
+									],
+									"type":"Specifications"
+								}
+							},
+							{
+								"TagGroup":{
+									"TagList":[
+										{
+											"Long":"ERROR",
+											"Short":"ERROR",
+											"ID":"ERROR"
+										},
+										{
+											"Long":"WARNING",
+											"Short":"WARNING",
+											"ID":"WARNING"
+										},
+										{
+											"Long":"INFO",
+											"Short":"INFO",
+											"ID":"INFO"
+										}
+									],
+									"type":"Error Level"
+								}
+							},
+							{
+								"TagGroup":{
+									"TagList":[
+										{
+											"Long":"Prohibited values",
+											"Short":"Prohibited values",
+											"ID":"Prohibited values"
+										},
+										{
+											"Long":"Inconsistent values",
+											"Short":"Inconsistent values",
+											"ID":"Inconsistent values"
+										},
+										{
+											"Long":"Incorrect ID references",
+											"Short":"Incorrect ID refs",
+											"ID":"Incorrect ID refs"
+										},
+										{
+											"Long":"Prohibited vocabulary",
+											"Short":"Prohibited vocabulary",
+											"ID":"Prohibited vocabulary"
+										},
+										{
+											"Long":"Deprecated vocabulary",
+											"Short":"Deprecated vocabulary",
+											"ID":"Deprecated vocabulary"
+										},
+										{
+											"Long":"Missing vocabulary",
+											"Short":"Missing vocabulary",
+											"ID":"Missing vocabulary"
+										},
+										{
+											"Long":"Prohibited locations",
+											"Short":"Prohibited locations",
+											"ID":"Prohibited locations"
+										},
+										{
+											"Long":"Properties with no effect",
+											"Short":"Properties with no effect",
+											"ID":"Properties with no effect"
+										},
+										{
+											"Long":"Profile signalling",
+											"Short":"Profile signalling",
+											"ID":"Profile signalling"
+										}
+									],
+									"type":"Error type"
+								}
+							},
+							{
+								"TagGroup":{
+									"TagList":[
+										{
+											"Long":"Subtitle content related issues",
+											"Short":"Subtitle content",
+											"ID":"Subtitle content"
+										},
+										{
+											"Long":"Timing related issues",
+											"Short":"Timing",
+											"ID":"Timing"
+										},
+										{
+											"Long":"Styling\/Positioning related issues",
+											"Short":"Styling\/Positioning",
+											"ID":"Styling\/Positioning"
+										}
+									],
+									"type":"Editorial constraints"
+								}
+							}
+						]
+					}
+				}
+

@@ -5,7 +5,7 @@
             <tags-filter :hasFilters="hasFilters" :tags="tags" :FILTERS="FILTERS"/>
           </div>
           <div class=""><hr style="margin:5px 0"/></div>
-          <div class="grow" :class="{ 'col-xs-3': !isInitial, 'col-xs-12': isInitial }">
+          <div class="grow" :class="{ 'd-none': !isInitial, 'col-xs-12': isInitial }">
             <form id="uploadform" class="upload" enctype="multipart/form-data" novaliadate>
               <!-- <h2>Upload File</h2> -->
               <div class="dropbox" :class="{'uploading': isSaving}">
@@ -34,7 +34,7 @@
             </form>
           </div>
           <transition name="appear" mode="out-in">
-            <div class="grow cut-content" :class="{ 'col-xs-9': !isInitial, 'col-xs-0': isInitial }">
+            <div class="grow cut-content" :class="{ 'col-xs-12': !isInitial, 'col-xs-0': isInitial }">
             <div key="failed" v-if="isFailed">
               <error-panel :message="uploadError"/>
             </div>
@@ -67,7 +67,7 @@ const slashes = protocol.concat("//");
 const port = window.location.port === "80" || window.location.hostname === "443" ? "" : ":" + window.location.port;
 const host = slashes.concat(window.location.hostname) + port;
 const URL = process.env.NODE_ENV === 'production' ? host : "http://localhost:8080";
-export default {
+var comp = {
   name: 'XCF',
   components: {
     ValidationResults,
@@ -76,6 +76,7 @@ export default {
   },
   mounted () {
     this.reset();
+    this.loadEaxmple();
   },
   computed: {
     showToken () {
@@ -196,9 +197,13 @@ export default {
     };
   }
 };
+export default comp;
 </script>
 
 <style >
+.d-none {
+  display: none;
+}
 .appear-enter-active > .cut-content  {
   overflow: hidden;
   text-overflow: ellipsis;
