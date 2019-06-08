@@ -121,7 +121,7 @@ export default {
       this.uploadedFiles = [];
       this.uploadError = null;
       this.$store.commit('setActive', 0);
-      fetch(URL + "/app/tags/").then(data => {
+      fetch(URL + "/tags.json").then(data => {
         data.json().then(tags => {
           this.$store.commit('tags', tags.Data);
           const filters = {};
@@ -144,17 +144,15 @@ export default {
     },
     loadEaxmple (name) {
       this.currentStatus = STATUS_SAVING;
-      var data;
-      switch (name) {
-        case 'example-1':
-          data = require('../store/example-1.json');
-          break;
-      }
-      var that = this;
-      window.setTimeout(function () {
-        that.currentStatus = STATUS_SUCCESS;
-        that.$store.dispatch('report', data);
-      }, 700);
+      fetch(URL + "/example.json").then(data => {
+        data.json().then(report => {
+          var that = this;
+          window.setTimeout(function () {
+            that.currentStatus = STATUS_SUCCESS;
+            that.$store.dispatch('report', report);
+          }, 700);
+        });
+      });
     },
     save (formData) {
       // upload data to the server
